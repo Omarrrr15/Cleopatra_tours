@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>عين كليوبترا للسياحة - مرسي مطروح</title>
+  <meta name="description"
+    content="عين كليوبترا للسياحة - أفضل رحلات مرسي مطروح. رحلات شواطئ، يخت، أكوا بارك، وسفاري. احجز رحلتك الآن!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="logo.png" alt="عين كليوبترا للسياحة" class="logo-img"
+          onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex'" />
+        <div class="logo-text" id="logoFallback" style="display:none">
+          <span class="logo-main">عين كليوبترا</span>
+          <span class="logo-sub">للسياحة</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-main">عين كليوبترا</span>
+          <span class="logo-sub">للسياحة</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">الرئيسية</a></li>
+        <li><a href="#trips">رحلاتنا</a></li>
+        <li><a href="#gallery">الصور والفيديوهات</a></li>
+        <li><a href="#about">عن الشركة</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+      <a href="https://wa.me/201031332130" class="nav-whatsapp" id="navWhatsapp" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+        احجز الآن
+      </a>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="hero_bg.png" alt="شواطئ مرسي مطروح" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🏖️ مرسي مطروح - جوهرة البحر المتوسط</div>
+      <h1 class="hero-title">عين كليوبترا<br /><span>للسياحة</span></h1>
+      <p class="hero-desc">اكتشف جمال مرسي مطروح مع أفضل رحلات الشواطئ، اليخت، الأكوا بارك والسفاري. نقدم لك تجربة
+        سياحية لا تُنسى بأفضل الأسعار.</p>
+      <div class="hero-btns">
+        <a href="#trips" class="btn-primary">استكشف رحلاتنا</a>
+        <a href="https://wa.me/201031332130" class="btn-secondary" target="_blank">تواصل معنا</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num">+500</span><span class="stat-label">عميل سعيد</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">أنواع رحلات</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num">10+</span><span class="stat-label">سنوات خبرة</span></div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRIPS SECTION ===== -->
+  <section class="trips-section" id="trips">
+    <div class="section-header">
+      <div class="section-badge">رحلاتنا المميزة</div>
+      <h2>جدول رحلات مرسى مطروح الأسبوعي</h2>
+      <p>استمتع برحلات يومية إلى أشهر شواطئ مرسى مطروح بأسعار مناسبة مقابل جودة عالية، السعر يشمل الانتقالات ذهاباً
+        وعودةً والشماسي والكراسي في الشاطئ.</p>
+      <p class="trips-sub-desc">نوفر مواعيد صباحية ومسائية تناسب جميع العملاء، مع تنظيم احترافي وانتقالات مريحة طوال
+        الأسبوع.</p>
+    </div>
+
+    <div class="trips-layout">
+
+      <!-- ===== جدول الرحلات ===== -->
+      <div class="schedule-table-wrap">
+        <div class="schedule-title">
+          <span class="schedule-icon">🗓️</span> رحلات الأسبوع
+        </div>
+        <div class="schedule-table">
+          <!-- Header -->
+          <div class="sched-row sched-head">
+            <div class="sched-cell">اليوم</div>
+            <div class="sched-cell">شاطئ الرحلة</div>
+            <div class="sched-cell">انتقالات فقط</div>
+            <div class="sched-cell">انتقالات + شاطئ</div>
+          </div>
+          <!-- السبت -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge">السبت</span></div>
+            <div class="sched-cell beach-cell">الغرام</div>
+            <div class="sched-cell price-cell"><span class="price">50</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">170</span><span
+                class="currency">جنيه</span></div>
+          </div>
+          <!-- الأحد -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge">الأحد</span></div>
+            <div class="sched-cell beach-cell">عروس الأبيض</div>
+            <div class="sched-cell price-cell"><span class="price">50</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">120</span><span
+                class="currency">جنيه</span></div>
+          </div>
+          <!-- الاثنين -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge special">الاثنين</span></div>
+            <div class="sched-cell beach-cell">مزار كليوباترا<br /><small>+ الجزيرة بينش</small></div>
+            <div class="sched-cell price-cell"><span class="price">70</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">135</span><span
+                class="currency">جنيه</span></div>
+          </div>
+          <!-- الثلاثاء -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge">الثلاثاء</span></div>
+            <div class="sched-cell beach-cell">ميناء حشيش</div>
+            <div class="sched-cell price-cell"><span class="price">50</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">110</span><span
+                class="currency">جنيه</span></div>
+          </div>
+          <!-- الأربعاء -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge">الأربعاء</span></div>
+            <div class="sched-cell beach-cell">غزالة الأبيض</div>
+            <div class="sched-cell price-cell"><span class="price">50</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">120</span><span
+                class="currency">جنيه</span></div>
+          </div>
+          <!-- الخميس -->
+          <div class="sched-row">
+            <div class="sched-cell day-cell"><span class="day-badge special">الخميس</span></div>
+            <div class="sched-cell beach-cell">عجيبة<br /><small>+ أم الرخم</small></div>
+            <div class="sched-cell price-cell"><span class="price">85</span><span class="currency">جنيه</span></div>
+            <div class="sched-cell price-cell highlight"><span class="price">180</span><span
+                class="currency">جنيه</span></div>
+          </div>
+        </div>
+        <div class="price-note">⚠️ هذه الأسعار من 1/7 حتى 7/31 - قد تتغير حسب الأحوال الجوية</div>
+      </div>
+
+      <!-- ===== مواعيد الرحلات ===== -->
+      <div class="timings-wrap">
+        <div class="schedule-title">
+          <span class="schedule-icon">🕐</span> مواعيد الرحلات يومياً
+        </div>
+
+        <div class="timing-group">
+          <div class="timing-group-title">
+            <span>📅</span> يوم الاثنين والخميس
+          </div>
+          <div class="timing-item morning">
+            <span class="timing-icon">☀️</span>
+            <span>9 صباحاً &larr; 5 مساءً</span>
+          </div>
+          <div class="timing-item evening">
+            <span class="timing-icon">🌙</span>
+            <span>12 ظهراً &larr; 8 مساءً</span>
+          </div>
+        </div>
+
+        <div class="timing-group">
+          <div class="timing-group-title">
+            <span>📅</span> باقي الأيام
+          </div>
+          <div class="timing-item morning">
+            <span class="timing-icon">☀️</span>
+            <span>9 صباحاً &larr; 3 عصراً</span>
+          </div>
+          <div class="timing-item morning">
+            <span class="timing-icon">🌤️</span>
+            <span>11 صباحاً &larr; 5 عصراً</span>
+          </div>
+          <div class="timing-item evening">
+            <span class="timing-icon">🌙</span>
+            <span>2 ظهراً &larr; 7 مساءً</span>
+          </div>
+        </div>
+
+        <!-- Services -->
+        <div class="services-box">
+          <div class="services-title">خدماتنا</div>
+          <div class="services-grid">
+            <div class="service-item">🚢<span>رحلات يخت</span></div>
+            <div class="service-item">🚗<span>رحلات سفاري</span></div>
+            <div class="service-item">🌊<span>أكوا بارك</span></div>
+            <div class="service-item">🏢<span>أسعار خاصة للشركات</span></div>
+          </div>
+        </div>
+
+        <a href="https://wa.me/201031332130?text=مرحباً، أريد الاستفسار عن رحلات مرسى مطروح" class="book-now-btn"
+          target="_blank">
+          احجز الآن على واتساب 📱
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <div class="section-header">
+
+
+
+    <!-- ===== GALLERY SECTION ===== -->
+    <section class="gallery-section" id="gallery">
+      <div class="section-header">
+        <div class="section-badge">معرضنا</div>
+        <h2>صور وفيديوهات رحلاتنا</h2>
+        <p>شاهد لحظات لا تُنسى من رحلاتنا السياحية في مرسي مطروح</p>
+      </div>
+
+      <!-- Main Tabs -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" id="tab-videos" onclick="showTab('videos')">🎬 الفيديوهات</button>
+        <button class="tab-btn" id="tab-photos" onclick="showTab('photos')">📸 الصور</button>
+      </div>
+
+      <!-- Videos Tab -->
+      <div class="tab-content active" id="videos-content">
+        <div class="drive-instruction">
+          <div class="drive-icon">📁</div>
+          <div>
+            <h4>لإضافة فيديوهاتك من Google Drive</h4>
+            <p>افتح ملف <strong>videos-data.js</strong> وضع الـ ID بتاع كل فيديو في المكان المخصص له.</p>
+          </div>
+        </div>
+        <div class="videos-grid" id="videosGrid"></div>
+      </div>
+
+      <!-- Photos Tab -->
+      <div class="tab-content" id="photos-content">
+        <!-- Category Sub-Tabs -->
+        <div class="photo-cat-tabs">
+          <button class="cat-btn active" id="cat-all" onclick="filterPhotos('all')">🌟 الكل</button>
+          <button class="cat-btn" id="cat-beaches" onclick="filterPhotos('beaches')">🏖️ شواطئ</button>
+          <button class="cat-btn" id="cat-yacht" onclick="filterPhotos('yacht')">⛵ يخت</button>
+          <button class="cat-btn" id="cat-aqua" onclick="filterPhotos('aqua')">🌊 أكوا بارك</button>
+          <button class="cat-btn" id="cat-safari" onclick="filterPhotos('safari')">🏜️ سفاري</button>
+        </div>
+        <div class="photos-grid" id="photosGrid"></div>
+      </div>
+
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-content">
+          <div class="section-badge">عن الشركة</div>
+          <h2>لماذا تختار عين كليوبترا؟</h2>
+          <p class="about-desc">نحن شركة متخصصة في السياحة الداخلية في مرسي مطروح، نقدم تجارب سياحية فريدة ومميزة بأعلى
+            معايير الجودة والأمان مع فريق متخصص وذو خبرة.</p>
+          <div class="features-list">
+            <div class="feature-item">
+              <div class="feature-icon">🛡️</div>
+              <div>
+                <h4>أمان تام</h4>
+                <p>جميع رحلاتنا مؤمنة بالكامل مع مرشدين معتمدين</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💰</div>
+              <div>
+                <h4>أفضل الأسعار</h4>
+                <p>نضمن لك أحسن قيمة مقابل سعر مناسب</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🚌</div>
+              <div>
+                <h4>نقل مريح</h4>
+                <p>سيارات حديثة ومكيفة من وإلى الفندق</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📞</div>
+              <div>
+                <h4>دعم 24/7</h4>
+                <p>فريق خدمة العملاء متاح على مدار الساعة</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <img src="hero_bg.png" alt="عين كليوبترا للسياحة" />
+          <div class="about-badge">
+            <span class="badge-num">+10</span>
+            <span class="badge-text">سنوات خبرة</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <div class="section-badge">تواصل معنا</div>
+        <h2>احجز رحلتك الآن</h2>
+        <p>تواصل معنا وسنرد عليك في أقرب وقت ممكن</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card whatsapp-card">
+          <div class="contact-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="white">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+          </div>
+          <h3>واتساب</h3>
+          <p>تحدث معنا مباشرة على واتساب وسنرد عليك فوراً</p>
+          <a href="https://wa.me/201031332130" class="contact-btn" target="_blank">01031332130</a>
+        </div>
+        <div class="contact-card phone-card">
+          <div class="contact-icon">📞</div>
+          <h3>اتصل بنا</h3>
+          <p>نحن متاحون طوال اليوم للرد على استفساراتك</p>
+          <a href="tel:+201550442479" class="contact-btn">01550442479</a>
+        </div>
+        <div class="contact-card location-card">
+          <div class="contact-icon">📍</div>
+          <h3>موقعنا</h3>
+          <p>مرسي مطروح، مصر</p>
+          <a href="https://maps.google.com/?q=Marsa+Matrouh" class="contact-btn" target="_blank">شاهد على الخريطة</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="logo.png" alt="عين كليوبترا" class="logo-img footer-logo-img" />
+          <div class="logo-text">
+            <span class="logo-main">عين كليوبترا</span>
+            <span class="logo-sub">للسياحة</span>
+          </div>
+        </div>
+        <p class="footer-desc">أفضل تجربة سياحية في مرسي مطروح</p>
+        <div class="footer-links">
+          <a href="#trips">رحلاتنا</a>
+          <a href="#gallery">المعرض</a>
+          <a href="#about">عن الشركة</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+        <p class="footer-copy">© 2025 عين كليوبترا للسياحة - جميع الحقوق محفوظة</p>
+      </div>
+    </footer>
+
+    <!-- ===== MODAL ===== -->
+    <div class="modal-overlay" id="modalOverlay" onclick="closeModal()">
+      <div class="modal-box" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">✕</button>
+        <div class="modal-content" id="modalContent"></div>
+      </div>
+    </div>
+
+    <!-- ===== VIDEO LIGHTBOX ===== -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+      <div class="lightbox-content" onclick="event.stopPropagation()">
+        <iframe id="lightboxFrame" src="" frameborder="0" allowfullscreen allow="autoplay"></iframe>
+      </div>
+    </div>
+
+    <script src="videos-data.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
