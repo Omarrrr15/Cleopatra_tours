@@ -1,4 +1,4 @@
-﻿/**
+/**
  * ================================================
  *  ملف إضافة الفيديوهات والصور - عين كليوبترا
  * ================================================
@@ -52,29 +52,34 @@ const photosData = {
     // ===== صور الشواطئ =====
     // { id: "ID_الصورة", title: "اسم الصورة" },
     { id: "1X3GKCulwCuXHHYLVN_5kN8quEf6sOOxM", title: "جدول الرحلات " },
-    { id: "SAMPLE_B2", title: "شاطئ كليوباترا" },
-    { id: "SAMPLE_B3", title: "شاطئ أبو الأصابع" },
+    { id: "1D6OURF8ff27P9u6F1W6x9_Q8sNv5gdoO", title: " سهرة عقر خادم" },
+    { id: "1mdqUXXICSwXeI7Rx_PG3j9xAISLILlq4", title: " سهرة القرية البدوية " },
+    { id: "1EYCL_p-XDpQKdVPBEaPA9sBwR6on8dQF", title: "  افواجنا في الغرام  " },
+    { id: "1HChm3EkNJ-duKo0rFqvbCKPVcg1-maZp", title: "   رحلات عين كليوبترا   " },
+    { id: "1i5cMoDG7A9J1giEEhGxcTTAIQ35RIORh", title: "  افواجنا في الأبيض  " },
   ],
 
   yacht: [
     // ===== صور اليخت =====
     // { id: "ID_الصورة", title: "اسم الصورة" },
-    { id: "SAMPLE_Y1", title: "اليخت في البحر" },
-    { id: "SAMPLE_Y2", title: "غروب على اليخت" },
+    { id: "1JUlzLA0wqR-V-1dXlSybQ86-XPvsbkvR", title: " يخت المحروسة " },
+    { id: "1Kgh-DULk0sB5xzT0LkwI2xIn6qeRsBOU", title: " يخت الفيروز " },
+    { id: "1X_T6VLPlGfW-q9JJgbO77QWsXhh2DpKY", title: "رحلات اليخت   " },
   ],
 
   aqua: [
     // ===== صور الأكوا بارك =====
     // { id: "ID_الصورة", title: "اسم الصورة" },
-    { id: "SAMPLE_A1", title: "الألعاب المائية" },
-    { id: "SAMPLE_A2", title: "المسبح الكبير" },
+    { id: "1toiwkzTHZTrdaFY3rOs1C2LN9xBWE1ZZ", title: "واوا لاند" },
+    { id: "1i1n-Elc_gxfRPJHBPEpZzoJc-0Q4ZYSj", title: " crazy water " },
   ],
 
   safari: [
     // ===== صور السفاري =====
     // { id: "ID_الصورة", title: "اسم الصورة" },
-    { id: "SAMPLE_S1", title: "الكثبان الرملية" },
-    { id: "SAMPLE_S2", title: "غروب الصحراء" },
+    { id: "1j0xhk3aHa7NA0m1Set60XEvU3gHHXtXo", title: "سفاري الشلال " },
+    { id: "1taXbwkNten07utbGcpLgQ9G9nXvL94R8", title: "أفواجنا في السفاري " },
+
   ],
 
 };
@@ -95,7 +100,7 @@ function getVideoEmbedUrl(id) {
 // رابط عرض الصورة
 function getPhotoUrl(id) {
   if (id.startsWith("SAMPLE")) return getPlaceholderImg(id);
-  return `https://drive.google.com/uc?export=view&id=${id}`;
+  return `https://drive.google.com/thumbnail?id=${id}&sz=w1000`;
 }
 
 // صور بديلة للأمثلة

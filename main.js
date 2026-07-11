@@ -26,7 +26,13 @@ function loadVideos() {
   videosData.forEach(v => {
     const card = document.createElement('div');
     card.className = 'video-card';
-    card.onclick = () => openVideo(v.id);
+    card.onclick = () => {
+      if (v.id.startsWith('SAMPLE')) {
+        alert('هذا فيديو نموذجي. أضف رابط الدرايف الحقيقي في ملف videos-data.js');
+        return;
+      }
+      window.open(`https://drive.google.com/file/d/${v.id}/view`, '_blank');
+    };
     card.innerHTML = `
       <div class="video-thumb">
         <img src="${getVideoThumb(v.id)}" alt="${v.title}" onerror="this.src='hero_bg.png'" />
